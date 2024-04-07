@@ -1,0 +1,7 @@
+{
+    "read_image_fps" : 30,
+    "base_frame_count" : 100,
+    "image_list_path" : "", 
+    "video_file": "./samples_CAPI/resources/action-call.mp4",
+    "sdk_config_path": "./data/config/"
+}

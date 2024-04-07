@@ -1,0 +1,331 @@
+The system is: Linux - 5.15.0-83-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/clang 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is Clang, found in "/MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/3.16.3/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/clang++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is Clang, found in "/MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/3.16.3/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9a6a6/fast && /usr/bin/make -f CMakeFiles/cmTC_9a6a6.dir/build.make CMakeFiles/cmTC_9a6a6.dir/build
+make[1]: Entering directory '/MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9a6a6.dir/testCCompiler.c.o
+/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/clang    -o CMakeFiles/cmTC_9a6a6.dir/testCCompiler.c.o   -c /MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_9a6a6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a6a6.dir/link.txt --verbose=1
+/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/clang      -rdynamic CMakeFiles/cmTC_9a6a6.dir/testCCompiler.c.o  -o cmTC_9a6a6 
+make[1]: Leaving directory '/MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_773c0/fast && /usr/bin/make -f CMakeFiles/cmTC_773c0.dir/build.make CMakeFiles/cmTC_773c0.dir/build
+make[1]: Entering directory '/MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_773c0.dir/CMakeCCompilerABI.c.o
+/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/clang   -v -o CMakeFiles/cmTC_773c0.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c
+Obfuscator-LLVM clang version 7.0.1  (https://github.com/heroims/obfuscator.git 66f7aabdd490a8a18f141b423a2a0bf1b0d42d26) (based on Obfuscator-LLVM 7.0.1)
+Target: aarch64-none-linux-android21
+Thread model: posix
+InstalledDir: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin
+Found candidate GCC installation: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x
+Selected GCC installation: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/clang70" -cc1 -triple aarch64-none-linux-android21 -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mthread-model posix -mdisable-fp-elim -fmath-errno -masm-verbose -mconstructor-aliases -fuse-init-array -target-cpu generic -target-feature +neon -target-abi aapcs -mllvm -aarch64-fix-cortex-a53-835769=1 -fallow-half-arguments-and-returns -dwarf-column-info -debugger-tuning=gdb -v -coverage-notes-file /MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_773c0.dir/CMakeCCompilerABI.c.gcno -resource-dir /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/lib/clang/7.0.1 -isysroot /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot -internal-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/local/include -internal-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/lib/clang/7.0.1/include -internal-externc-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/include -internal-externc-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/include -fdebug-compilation-dir /MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -fno-signed-char -fobjc-runtime=gcc -fdiagnostics-show-option -o CMakeFiles/cmTC_773c0.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -faddrsig
+clang -cc1 version 7.0.1 based upon Obfuscator-LLVM 7.0.1 default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/local/include"
+ignoring nonexistent directory "/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/lib/clang/7.0.1/include
+ /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/include/aarch64-linux-android
+ /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/include
+End of search list.
+Linking C executable cmTC_773c0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_773c0.dir/link.txt --verbose=1
+/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/clang     -v -rdynamic CMakeFiles/cmTC_773c0.dir/CMakeCCompilerABI.c.o  -o cmTC_773c0 
+Obfuscator-LLVM clang version 7.0.1  (https://github.com/heroims/obfuscator.git 66f7aabdd490a8a18f141b423a2a0bf1b0d42d26) (based on Obfuscator-LLVM 7.0.1)
+Target: aarch64-none-linux-android21
+Thread model: posix
+InstalledDir: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin
+Found candidate GCC installation: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x
+Selected GCC installation: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot -pie -export-dynamic --fix-cortex-a53-843419 --enable-new-dtags --eh-frame-hdr -m aarch64linux -export-dynamic -dynamic-linker /system/bin/linker64 -o cmTC_773c0 /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/lib/crtbegin_dynamic.o -L/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x -L/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/lib CMakeFiles/cmTC_773c0.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/lib/crtend_android.o
+make[1]: Leaving directory '/MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/lib/clang/7.0.1/include]
+    add: [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/include/aarch64-linux-android]
+    add: [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/include]
+  end of search list found
+  collapse include dir [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/lib/clang/7.0.1/include] ==> [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/lib/clang/7.0.1/include]
+  collapse include dir [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/include/aarch64-linux-android] ==> [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/sysroot/usr/include/aarch64-linux-android]
+  collapse include dir [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/include] ==> [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/sysroot/usr/include]
+  implicit include dirs: [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/lib/clang/7.0.1/include;/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/sysroot/usr/include/aarch64-linux-android;/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/sysroot/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_773c0/fast && /usr/bin/make -f CMakeFiles/cmTC_773c0.dir/build.make CMakeFiles/cmTC_773c0.dir/build]
+  ignore line: [make[1]: Entering directory '/MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_773c0.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/clang   -v -o CMakeFiles/cmTC_773c0.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c]
+  ignore line: [Obfuscator-LLVM clang version 7.0.1  (https://github.com/heroims/obfuscator.git 66f7aabdd490a8a18f141b423a2a0bf1b0d42d26) (based on Obfuscator-LLVM 7.0.1)]
+  ignore line: [Target: aarch64-none-linux-android21]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin]
+  ignore line: [Found candidate GCC installation: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Selected GCC installation: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  ignore line: [ "/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/clang70" -cc1 -triple aarch64-none-linux-android21 -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mthread-model posix -mdisable-fp-elim -fmath-errno -masm-verbose -mconstructor-aliases -fuse-init-array -target-cpu generic -target-feature +neon -target-abi aapcs -mllvm -aarch64-fix-cortex-a53-835769=1 -fallow-half-arguments-and-returns -dwarf-column-info -debugger-tuning=gdb -v -coverage-notes-file /MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_773c0.dir/CMakeCCompilerABI.c.gcno -resource-dir /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/lib/clang/7.0.1 -isysroot /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot -internal-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/local/include -internal-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/lib/clang/7.0.1/include -internal-externc-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/include -internal-externc-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/include -fdebug-compilation-dir /MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -fno-signed-char -fobjc-runtime=gcc -fdiagnostics-show-option -o CMakeFiles/cmTC_773c0.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c -faddrsig]
+  ignore line: [clang -cc1 version 7.0.1 based upon Obfuscator-LLVM 7.0.1 default target x86_64-unknown-linux-gnu]
+  ignore line: [ignoring nonexistent directory "/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/lib/clang/7.0.1/include]
+  ignore line: [ /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/include/aarch64-linux-android]
+  ignore line: [ /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [Linking C executable cmTC_773c0]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_773c0.dir/link.txt --verbose=1]
+  ignore line: [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/clang     -v -rdynamic CMakeFiles/cmTC_773c0.dir/CMakeCCompilerABI.c.o  -o cmTC_773c0 ]
+  ignore line: [Obfuscator-LLVM clang version 7.0.1  (https://github.com/heroims/obfuscator.git 66f7aabdd490a8a18f141b423a2a0bf1b0d42d26) (based on Obfuscator-LLVM 7.0.1)]
+  ignore line: [Target: aarch64-none-linux-android21]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin]
+  ignore line: [Found candidate GCC installation: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Selected GCC installation: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  link line: [ "/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot -pie -export-dynamic --fix-cortex-a53-843419 --enable-new-dtags --eh-frame-hdr -m aarch64linux -export-dynamic -dynamic-linker /system/bin/linker64 -o cmTC_773c0 /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/lib/crtbegin_dynamic.o -L/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x -L/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/lib CMakeFiles/cmTC_773c0.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/lib/crtend_android.o]
+    arg [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld] ==> ignore
+    arg [--sysroot=/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [--fix-cortex-a53-843419] ==> ignore
+    arg [--enable-new-dtags] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [aarch64linux] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/system/bin/linker64] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_773c0] ==> ignore
+    arg [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/lib/crtbegin_dynamic.o] ==> ignore
+    arg [-L/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x] ==> dir [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x]
+    arg [-L/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64] ==> dir [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64]
+    arg [-L/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib] ==> dir [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib]
+    arg [-L/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/lib] ==> dir [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/lib]
+    arg [CMakeFiles/cmTC_773c0.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-ldl] ==> lib [dl]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-ldl] ==> lib [dl]
+    arg [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/lib/crtend_android.o] ==> ignore
+  collapse library dir [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x] ==> [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/lib/gcc/aarch64-linux-android/4.9.x]
+  collapse library dir [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64] ==> [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/aarch64-linux-android/lib64]
+  collapse library dir [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib] ==> [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/aarch64-linux-android/lib]
+  collapse library dir [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/lib] ==> [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/sysroot/usr/lib]
+  implicit libs: [gcc;dl;c;gcc;dl]
+  implicit dirs: [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/lib/gcc/aarch64-linux-android/4.9.x;/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/aarch64-linux-android/lib64;/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/aarch64-linux-android/lib;/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/sysroot/usr/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e90f7/fast && /usr/bin/make -f CMakeFiles/cmTC_e90f7.dir/build.make CMakeFiles/cmTC_e90f7.dir/build
+make[1]: Entering directory '/MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e90f7.dir/testCXXCompiler.cxx.o
+/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/clang++     -o CMakeFiles/cmTC_e90f7.dir/testCXXCompiler.cxx.o -c /MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_e90f7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e90f7.dir/link.txt --verbose=1
+/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/clang++       -rdynamic CMakeFiles/cmTC_e90f7.dir/testCXXCompiler.cxx.o  -o cmTC_e90f7 
+make[1]: Leaving directory '/MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_911b2/fast && /usr/bin/make -f CMakeFiles/cmTC_911b2.dir/build.make CMakeFiles/cmTC_911b2.dir/build
+make[1]: Entering directory '/MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_911b2.dir/CMakeCXXCompilerABI.cpp.o
+/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/clang++    -v -o CMakeFiles/cmTC_911b2.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp
+Obfuscator-LLVM clang version 7.0.1  (https://github.com/heroims/obfuscator.git 66f7aabdd490a8a18f141b423a2a0bf1b0d42d26) (based on Obfuscator-LLVM 7.0.1)
+Target: aarch64-none-linux-android21
+Thread model: posix
+InstalledDir: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin
+Found candidate GCC installation: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x
+Selected GCC installation: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/clang70++" -cc1 -triple aarch64-none-linux-android21 -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mthread-model posix -mdisable-fp-elim -fmath-errno -masm-verbose -mconstructor-aliases -fuse-init-array -target-cpu generic -target-feature +neon -target-abi aapcs -mllvm -aarch64-fix-cortex-a53-835769=1 -fallow-half-arguments-and-returns -dwarf-column-info -debugger-tuning=gdb -v -coverage-notes-file /MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_911b2.dir/CMakeCXXCompilerABI.cpp.gcno -resource-dir /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/lib/clang/7.0.1 -isysroot /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot -internal-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x -internal-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/aarch64-linux-android -internal-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/backward -internal-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/local/include -internal-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/lib/clang/7.0.1/include -internal-externc-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/include -internal-externc-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/include -fdeprecated-macro -fdebug-compilation-dir /MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -fno-signed-char -fobjc-runtime=gcc -fcxx-exceptions -fexceptions -fdiagnostics-show-option -o CMakeFiles/cmTC_911b2.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -faddrsig
+clang -cc1 version 7.0.1 based upon Obfuscator-LLVM 7.0.1 default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/backward"
+ignoring nonexistent directory "/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/local/include"
+ignoring nonexistent directory "/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x
+ /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/aarch64-linux-android
+ /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/lib/clang/7.0.1/include
+ /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/include/aarch64-linux-android
+ /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/include
+End of search list.
+Linking CXX executable cmTC_911b2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_911b2.dir/link.txt --verbose=1
+/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/clang++      -v -rdynamic CMakeFiles/cmTC_911b2.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_911b2 
+Obfuscator-LLVM clang version 7.0.1  (https://github.com/heroims/obfuscator.git 66f7aabdd490a8a18f141b423a2a0bf1b0d42d26) (based on Obfuscator-LLVM 7.0.1)
+Target: aarch64-none-linux-android21
+Thread model: posix
+InstalledDir: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin
+Found candidate GCC installation: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x
+Selected GCC installation: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot -pie -export-dynamic --fix-cortex-a53-843419 --enable-new-dtags --eh-frame-hdr -m aarch64linux -export-dynamic -dynamic-linker /system/bin/linker64 -o cmTC_911b2 /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/lib/crtbegin_dynamic.o -L/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x -L/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/lib CMakeFiles/cmTC_911b2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/lib/crtend_android.o
+make[1]: Leaving directory '/MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x]
+    add: [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/aarch64-linux-android]
+    add: [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/lib/clang/7.0.1/include]
+    add: [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/include/aarch64-linux-android]
+    add: [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/include]
+  end of search list found
+  collapse include dir [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x] ==> [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/include/c++/4.9.x]
+  collapse include dir [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/aarch64-linux-android] ==> [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/include/c++/4.9.x/aarch64-linux-android]
+  collapse include dir [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/lib/clang/7.0.1/include] ==> [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/lib/clang/7.0.1/include]
+  collapse include dir [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/include/aarch64-linux-android] ==> [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/sysroot/usr/include/aarch64-linux-android]
+  collapse include dir [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/include] ==> [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/sysroot/usr/include]
+  implicit include dirs: [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/include/c++/4.9.x;/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/include/c++/4.9.x/aarch64-linux-android;/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/lib/clang/7.0.1/include;/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/sysroot/usr/include/aarch64-linux-android;/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/sysroot/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_911b2/fast && /usr/bin/make -f CMakeFiles/cmTC_911b2.dir/build.make CMakeFiles/cmTC_911b2.dir/build]
+  ignore line: [make[1]: Entering directory '/MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_911b2.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/clang++    -v -o CMakeFiles/cmTC_911b2.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Obfuscator-LLVM clang version 7.0.1  (https://github.com/heroims/obfuscator.git 66f7aabdd490a8a18f141b423a2a0bf1b0d42d26) (based on Obfuscator-LLVM 7.0.1)]
+  ignore line: [Target: aarch64-none-linux-android21]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin]
+  ignore line: [Found candidate GCC installation: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Selected GCC installation: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  ignore line: [ "/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/clang70++" -cc1 -triple aarch64-none-linux-android21 -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mthread-model posix -mdisable-fp-elim -fmath-errno -masm-verbose -mconstructor-aliases -fuse-init-array -target-cpu generic -target-feature +neon -target-abi aapcs -mllvm -aarch64-fix-cortex-a53-835769=1 -fallow-half-arguments-and-returns -dwarf-column-info -debugger-tuning=gdb -v -coverage-notes-file /MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_911b2.dir/CMakeCXXCompilerABI.cpp.gcno -resource-dir /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/lib/clang/7.0.1 -isysroot /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot -internal-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x -internal-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/aarch64-linux-android -internal-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/backward -internal-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/local/include -internal-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/lib/clang/7.0.1/include -internal-externc-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/include -internal-externc-isystem /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/include -fdeprecated-macro -fdebug-compilation-dir /MyGit/MyRepository/SharedMemory/dms_service/ais_client/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -fno-signed-char -fobjc-runtime=gcc -fcxx-exceptions -fexceptions -fdiagnostics-show-option -o CMakeFiles/cmTC_911b2.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp -faddrsig]
+  ignore line: [clang -cc1 version 7.0.1 based upon Obfuscator-LLVM 7.0.1 default target x86_64-unknown-linux-gnu]
+  ignore line: [ignoring nonexistent directory "/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/backward"]
+  ignore line: [ignoring nonexistent directory "/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x]
+  ignore line: [ /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../include/c++/4.9.x/aarch64-linux-android]
+  ignore line: [ /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/lib/clang/7.0.1/include]
+  ignore line: [ /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/include/aarch64-linux-android]
+  ignore line: [ /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [Linking CXX executable cmTC_911b2]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_911b2.dir/link.txt --verbose=1]
+  ignore line: [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/clang++      -v -rdynamic CMakeFiles/cmTC_911b2.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_911b2 ]
+  ignore line: [Obfuscator-LLVM clang version 7.0.1  (https://github.com/heroims/obfuscator.git 66f7aabdd490a8a18f141b423a2a0bf1b0d42d26) (based on Obfuscator-LLVM 7.0.1)]
+  ignore line: [Target: aarch64-none-linux-android21]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin]
+  ignore line: [Found candidate GCC installation: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Selected GCC installation: /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  link line: [ "/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot -pie -export-dynamic --fix-cortex-a53-843419 --enable-new-dtags --eh-frame-hdr -m aarch64linux -export-dynamic -dynamic-linker /system/bin/linker64 -o cmTC_911b2 /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/lib/crtbegin_dynamic.o -L/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x -L/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/lib CMakeFiles/cmTC_911b2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/lib/crtend_android.o]
+    arg [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld] ==> ignore
+    arg [--sysroot=/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [--fix-cortex-a53-843419] ==> ignore
+    arg [--enable-new-dtags] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [aarch64linux] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/system/bin/linker64] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_911b2] ==> ignore
+    arg [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/lib/crtbegin_dynamic.o] ==> ignore
+    arg [-L/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x] ==> dir [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x]
+    arg [-L/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64] ==> dir [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64]
+    arg [-L/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib] ==> dir [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib]
+    arg [-L/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/lib] ==> dir [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/lib]
+    arg [CMakeFiles/cmTC_911b2.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-ldl] ==> lib [dl]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-ldl] ==> lib [dl]
+    arg [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/lib/crtend_android.o] ==> ignore
+  collapse library dir [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x] ==> [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/lib/gcc/aarch64-linux-android/4.9.x]
+  collapse library dir [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64] ==> [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/aarch64-linux-android/lib64]
+  collapse library dir [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib] ==> [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/aarch64-linux-android/lib]
+  collapse library dir [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/bin/../sysroot/usr/lib] ==> [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/sysroot/usr/lib]
+  implicit libs: [stdc++;m;gcc;gcc;dl;c;gcc;gcc;dl]
+  implicit dirs: [/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/lib/gcc/aarch64-linux-android/4.9.x;/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/aarch64-linux-android/lib64;/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/aarch64-linux-android/lib;/usr/local/toolchains/__android-ndk-r18b/clang-ollvm-str/android-21/android-aarch64/sysroot/usr/lib]
+  implicit fwks: []
+
+

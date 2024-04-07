@@ -1,0 +1,311 @@
+{
+    "config_version": "D9GDv1.0.1_",
+    "debug_level": 0,
+    "logui": {
+        "enabled": false,
+        "svr_port": 65510
+    },
+    "fusion_logic": {
+        "emotion": {
+            "decision_strategy": 2,
+            "smooth": {
+                "enabled": true,
+                "smooth_window_size": 3,
+                "uniform_reuse_size": 6,
+                "uniform_window_size": 6
+            }
+        },
+        "face_attr": {
+            "smooth": {
+            "enabled": true,
+                "smooth_size": 20,
+                "attr_age_weight_alpha": -1
+            }
+        },
+        "drowsiness": {
+            "enabled": true,
+            "suppress_config": {
+                "speed_thr": 10
+            },
+            "eye": {
+                "eye_open_override": {
+                    "eye_open_thr": 0.8,
+                    "###G柱模型请更改eye_open_thr到": 0.8,
+                    "eye_valid_thr": 0.5,
+                    "###G柱模型请更改eye_valid_thr到": 0.5,
+                    "eye_key_point_thr": 20,
+                    "###G柱模型请更改eye_key_point_thr到": 20,
+                    "eye_squint_thr": 0.55,
+                    "###G柱模型请更改eye_squint_thr到": 0.55
+                },
+                "eye_feature_override": {
+                    "eye_valid_thr": 0.5,
+                    "eye_key_point_thr": 15,
+                    "eye_dyn_thr_adj": {
+                        "enabled": true,
+                        "default_thresh": 0.1,
+                        "methods": [
+                        {
+                            "max_calibration_size": 50,
+                            "adapt_mode": true,
+                            "candidate_cfg": {
+                                "type": "alpha",
+                                "window_size": 10,
+                                "window_weight": {
+                                    "0": 0.2,
+                                    "1": 0.5,
+                                    "2": 0.3
+                                }
+                            },
+                            "calc_cfg": {
+                                "type": "alpha",
+                                "eye_thresh": [18, 22],
+                                "eye_trunck": [18, 22],
+                                "eye_border": [16, 20],
+                                "eye_range": [0.05, 0.05],
+                                "default_value": 0,
+                                "flag": 1
+                            }
+                        },
+                        {
+                            "max_calibration_size": 50,
+                            "adapt_mode": true,
+                            "candidate_cfg": {
+                                "type": "beta"
+                            },
+                            "calc_cfg": {
+                                "type": "beta",
+                                "eye_thresh": [5, 5],
+                                "eye_trunck": [5, 7],
+                                "eye_border": [0, 5],
+                                "eye_range": [0.05, 0.05],
+                                "default_value": 0,
+                                "flag": 1
+                            }
+                        }
+                        ]
+                    }
+                },
+                "eye_common_override": {
+                  "yaw_thr": [-35, 35]
+                },
+                "smooth": {
+                  "enabled": true,
+                  "smooth_window_size": 3
+                },
+                "perclos": {
+                    "enabled": true,
+                    "window_perclos_time": 60,
+                    "blink_thr_time": 0.3,
+                    "blink_time_weight": 0.7,
+                    "eye_invalid_count_thr": 5,
+                    "thr_perclos": [0.065, 0.045, 0.03]
+                },
+                "eye_continuous_close_judge": {
+                    "enabled": false,
+                    "eye_close_smooth_thr": 0.2,
+                    "eye_close_thr": 3,
+                    "frame_no_face_heavy_reset": 4
+                },
+                "eye_continuous_sleep_judge":{
+                    "enabled": true,
+                    "micro_sleep_required_drowy_time": 1800,
+                    "sleep_eye_close_thr":[6, 3, 2],
+                    "sleep_eye_close_smooth_thr": 0.3
+                },
+                "eye_3d_config": {
+                    "enabled": false,
+                    "head_3d_model": "models/MM_Pattern_Head3d_Common_GRAY_H1.12_4.1.401.model",
+                    "cam_info": "config/distraction_cfg/camera_dms.json"
+                }
+            },
+            "mouth": {
+                "smooth": {
+                    "enabled": true,
+                    "smooth_window_size": 5
+                },
+                "yawn": {
+                    "enabled": true,
+                    "yawn_time_range": [2, 20],
+                    "window_yawn_time": 60,
+                    "invalid_time_threshold": 0.5,
+                    "thr_yawn_freq": [3, 2, 1]
+                }
+            }
+        },
+        "distraction": {
+            "enabled": true,
+            "##fixation_smooth":{
+                "enabled" : true,
+                "max_gap" : 7,
+                "max_fixation" : 30,
+                "fixation_smooth_type" : "mean",
+                "velocity_threshold" : 3,
+                "median_window_size" : 3,
+                "saccades_window_size" : 3
+            },
+            "##over_exp_filter": {
+                "enabled": true,
+                "over_exposure_skip_frame": 1,
+                "expo_brightness_thr": 225,
+                "expo_brightness_ratio_thr": 0.5,
+                "expo_cal_area_margin": 1.1
+            },
+            "##kalman_for_gaze_point":{
+                "enabled": true
+            },
+            "##calibration": {
+                "enabled": true,
+                "dur_frame_limit": 1800
+            },
+            "##smooth": {
+                "enabled": true,
+                "smooth_gaze_window_size": 7,
+                "vote_thresh": 4
+            },
+            "adjust_gaze_result": {
+                "eye_status_adjust_merge_result": false,
+                "yaw_range_adjust_merge_result": [0 ,0],
+                "yaw_lr_gaze_point_effect_thr": 0.3,
+                "yaw_smooth_weigth_ratio": -0.1,
+                "head3d_use_fusion": false, 
+                "headposition_threshold" : [0, 0, 0, 0, 0, 0]
+            },
+            "score_calc": {
+                "long_distraction":{
+                    "type": "normal",
+                    "distraction_score_thr": [4.5, 3, -1],
+                    "fast_fade_time": 0.2,
+                    "score_window_dur_time": 10,
+                    "alarm_speed_thr": [10, 50]
+                },
+                "short_distraction":{
+                    "type":"normal",
+                    "distraction_score_thr": [10, -1, -1],
+                    "fast_fade_time": 2.0,
+                    "score_window_dur_time": 30,
+                    "alarm_speed_thr": [10, -1]
+                },
+                "driver_unresponsive": {
+                    "enabled": true,
+                    "score_window_dur_time": 3.5,
+                    "distraction_score_thr": 3,
+                    "fast_fade_time": 0.2
+                },
+                "suppress_config": {
+                    "steering_wheel_angle": 15,
+                    "turn_signal": true
+                },
+                "score_cal_optional_cfg" :{
+                    "##face_score_filter_thr": 0.92,
+                    "##face_score_filter_thr_l": 0.1,
+                    "##gaze_point_dist_thr": 0.2,
+                    "##distraction_headpose_pitch_min_thr": -15,
+                    "##distraction_headpose_pitch_max_thr": 60,
+                    "##eye_wink_reset_headpose_thr": 1,
+                    "##left_right_gaze_effect_thresh": 0.45,
+                    "##distraction_smooth_region_enlarge_ratio": 0.0,
+                    "##big_angle_window_size": 10,
+                    "##big_angle_left_yaw_thr": 60,
+                    "##big_angle_right_yaw_thr": -60,
+                    "##big_angle_ratio_1": 0.8,
+                    "##big_angle_ratio_2": 0.5,
+                    "##big_angle_dur_thr": 4,
+                    "##pitch_window_size": 15,
+                    "##pitch_change_thr": 4.0,
+                    "##pitch_trend_alpha": 1.7,
+                    "##eye_status_revise_invalid_gaze_thr": 0.3
+                },
+                "smooth_face_dur_thr": 1.0 ,
+                "conflict_sln": ["VALID_SCORE", "PRIORITY", "INDEX"],
+                "distraction_gaze3d_area_strategy_select": "base",
+                "zones": [
+                {
+                    "type": "GAZE3DPOINT",
+                    "priority": 5,
+                    "weight": 0,
+                    "distraction_status": "focus",
+                    "anchor_index": [1, 3, 9, 7],
+                    "ratio": 0.15
+                },
+                {
+                    "type": "HEADPOSE",
+                    "distraction_status": "focus",
+                    "priority": 5,
+                    "weight": 0,
+                    "yaw": [-45, 45],
+                    "pitch": [-30, 30],
+                    "roll": [-180, 180]
+                },
+                {
+                    "type": "GAZE3DPOINT",
+                    "priority": 3,
+                    "weight": 1,
+                    "distraction_status": "heavy",
+                    "anchor_index": [1, 3, 9, 7],
+                    "ratio": 5
+                },
+                {
+                    "type": "HEADPOSE",
+                    "priority": 3,
+                    "weight": 1,
+                    "distraction_status": "heavy",
+                    "yaw": [-180, 180],
+                    "pitch": [-180, 180],
+                    "roll": [-180, 180]
+                }
+                ]
+            },
+            "gaze_m3d_aoi": {
+                "priority_dic": [1, 3, 2, 4],
+                "aoi_info": {
+                    "aoi_smooth_region_enlarge_ratio": 0.0,
+                    "anchors_path": "config/distraction_cfg/anchors20220902.xyz",
+                    "need_transfer": false,
+                    "trans_triangle": true,
+                    "strategy_select": "base",
+                    "aois": [
+                    {
+                        "index": 1,
+                        "name": "front_windowshiled",
+                        "anchor_index": [1, 3, 9, 7],
+                        "ratio": 0.1
+                    },
+                    {
+                        "index": 2,
+                        "name": "side_front_windowshiled",
+                        "anchor_index": [3, 17, 62, 9],
+                        "ratio": -0.05
+                    },
+                    {
+                        "index": 3,
+                        "name": "navi_display",
+                        "anchor_index": [20, 21, 24, 23],
+                        "ratio": 0.1
+                    },
+                    {
+                        "index": 4,
+                        "name": "speed_indicator",
+                        "anchor_index": [11, 13, 67, 66],
+                        "ratio": 0.1
+                    }
+                    ]
+                }
+            }
+        },
+        "headpose_abnormal": {
+          "enabled": false,
+          "pitch": [-30, 30],
+          "yaw": [-45, 45],
+          "roll": [-180, 180],
+          "time_thr_second": 3
+        },
+        "camera_occlusion": {
+            "enabled": true,
+            "debug_level": 0,
+            "frame_rate": 10,
+            "connect_region_threshold": 1000,
+            "occlusion_time_thr": 5
+        }
+    }
+}

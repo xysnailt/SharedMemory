@@ -1,0 +1,3 @@
+/MyGit/MyRepository/SharedMemory/dms_service/build/CMakeFiles/rebuild_cache.dir
+/MyGit/MyRepository/SharedMemory/dms_service/build/CMakeFiles/edit_cache.dir
+/MyGit/MyRepository/SharedMemory/dms_service/build/CMakeFiles/dmsServer.dir

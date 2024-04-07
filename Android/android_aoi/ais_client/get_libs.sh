@@ -1,0 +1,14 @@
+cp /vendor/lib64/libuhab.so /data/local/tmp/lib/;
+cp /system/lib64/liblog.so /data/local/tmp/lib/;
+cp /vendor/lib64/libmmosal.so /data/local/tmp/lib/;
+cp /system/lib64/libc++.so /data/local/tmp/lib/;
+cp /apex/com.android.runtime/lib64/bionic/libc.so /data/local/tmp/lib/;
+cp /apex/com.android.runtime/lib64/bionic/libm.so /data/local/tmp/lib/;
+cp /apex/com.android.runtime/lib64/bionic/libdl.so /data/local/tmp/lib/;
+cp /system/lib64/libutils.so /data/local/tmp/lib/;
+cp /system/lib64/libcutils.so /data/local/tmp/lib/;
+cp /system/lib64/libprocessgroup.so /data/local/tmp/lib/;
+cp /system/lib64/libvndksupport.so /data/local/tmp/lib/;
+cp /system/lib64/libbase.so /data/local/tmp/lib/;
+cp /system/lib64/libcgrouprc.so /data/local/tmp/lib/;
+cp /apex/com.android.runtime/lib64/bionic/libdl_android.so /data/local/tmp/lib/;

@@ -1,0 +1,404 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+hdl                 0x8               main.o
+ops                 0x10              main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+LOAD /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crti.o
+LOAD /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/host/linux/x86_64/usr/lib/gcc/aarch64-unknown-nto-qnx7.0.0/5.4.0//crtbegin.o
+LOAD main.o
+LOAD /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/libslog2.so
+LOAD /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/desaysv/os/test/oem_app_test/pm_lib/libsv_oem_pm_client_lib.so
+LOAD /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/host/linux/x86_64/usr/lib/gcc/aarch64-unknown-nto-qnx7.0.0/5.4.0//libgcc.a
+LOAD /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/libc.so
+LOAD /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/libcS.a
+LOAD /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/host/linux/x86_64/usr/lib/gcc/aarch64-unknown-nto-qnx7.0.0/5.4.0//libgcc.a
+LOAD /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/host/linux/x86_64/usr/lib/gcc/aarch64-unknown-nto-qnx7.0.0/5.4.0//crtend.o
+LOAD /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crtn.o
+                [!provide]                        PROVIDE (__executable_start, 0x0)
+                0x0000000000000200                . = (0x0 + SIZEOF_HEADERS)
+
+.interp         0x0000000000000200       0x17
+ *(.interp)
+ .interp        0x0000000000000200       0x17 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+
+.note           0x0000000000000217       0x18
+ .note          0x0000000000000217       0x18 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crtn.o
+
+.note.gnu.build-id
+                0x0000000000000230       0x20
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x0000000000000230       0x20 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+
+.hash
+ *(.hash)
+
+.gnu.hash       0x0000000000000250       0x64
+ *(.gnu.hash)
+ .gnu.hash      0x0000000000000250       0x64 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+
+.dynsym         0x00000000000002b8      0x390
+ *(.dynsym)
+ .dynsym        0x00000000000002b8      0x390 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+
+.dynstr         0x0000000000000648      0x1d0
+ *(.dynstr)
+ .dynstr        0x0000000000000648      0x1d0 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+
+.gnu.version    0x0000000000000818        0x0
+ *(.gnu.version)
+ .gnu.version   0x0000000000000818        0x0 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+
+.gnu.version_d  0x0000000000000818        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000000818        0x0 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+
+.gnu.version_r  0x0000000000000818        0x0
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x0000000000000818        0x0 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+
+.rela.dyn       0x0000000000000818      0x120
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.local
+                0x0000000000000818       0x18 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000000830       0xd8 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rela.ifunc)
+ .rela.ifunc    0x0000000000000908        0x0 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+ .rela.fini_array
+                0x0000000000000908       0x18 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+ .rela.init_array
+                0x0000000000000920       0x18 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+
+.rela.plt       0x0000000000000938      0x198
+ *(.rela.plt)
+ .rela.plt      0x0000000000000938      0x198 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+                [!provide]                        PROVIDE (__rela_iplt_start, .)
+ *(.rela.iplt)
+                [!provide]                        PROVIDE (__rela_iplt_end, .)
+
+.init
+ *(SORT(.init))
+
+.plt            0x0000000000000ad0      0x130
+ *(.plt)
+ .plt           0x0000000000000ad0      0x130 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+ *(.iplt)
+
+.text           0x0000000000000c00      0x3c8
+                0x0000000000000c00                _btext = .
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ .text.startup  0x0000000000000c00       0x68 main.o
+                0x0000000000000c00                main
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000000c68       0x90 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+                0x0000000000000c68                _start
+ .text          0x0000000000000cf8        0x0 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crti.o
+ .text          0x0000000000000cf8      0x130 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/host/linux/x86_64/usr/lib/gcc/aarch64-unknown-nto-qnx7.0.0/5.4.0//crtbegin.o
+ .text          0x0000000000000e28      0x1a0 main.o
+                0x0000000000000e28                suspend_callback
+                0x0000000000000ef4                resume_callback
+ .text          0x0000000000000fc8        0x0 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/host/linux/x86_64/usr/lib/gcc/aarch64-unknown-nto-qnx7.0.0/5.4.0//crtend.o
+ .text          0x0000000000000fc8        0x0 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crtn.o
+ *(.gnu.warning)
+
+.fini
+ *(SORT(.fini))
+                [!provide]                        PROVIDE (__etext, .)
+                [!provide]                        PROVIDE (_etext, .)
+                [!provide]                        PROVIDE (etext, .)
+
+.rodata         0x0000000000000fc8      0x147
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x0000000000000fc8       0x28 main.o
+ .rodata.str1.1
+                0x0000000000000ff0      0x11f main.o
+                                        0x16c (size before relaxing)
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000001110        0x0
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000001110        0x0 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crtn.o
+
+.eh_frame       0x0000000000001110        0x4
+ *(.eh_frame)
+ .eh_frame      0x0000000000001110        0x0 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/host/linux/x86_64/usr/lib/gcc/aarch64-unknown-nto-qnx7.0.0/5.4.0//crtbegin.o
+ .eh_frame      0x0000000000001110        0x4 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/host/linux/x86_64/usr/lib/gcc/aarch64-unknown-nto-qnx7.0.0/5.4.0//crtend.o
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x0000000000001114                . = (ALIGN (0x10000) - ((0x10000 - .) & 0xffff))
+                0x0000000000011d38                . = DATA_SEGMENT_ALIGN (0x10000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000000011d38        0x0
+                0x0000000000011d38                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x0000000000011d38                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x0000000000011d38        0x8
+                0x0000000000011d38                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*) SORT(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+ .init_array    0x0000000000011d38        0x8 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/host/linux/x86_64/usr/lib/gcc/aarch64-unknown-nto-qnx7.0.0/5.4.0//crtbegin.o
+                0x0000000000011d40                PROVIDE (__init_array_end, .)
+
+.fini_array     0x0000000000011d40        0x8
+                0x0000000000011d40                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*) SORT(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+ .fini_array    0x0000000000011d40        0x8 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/host/linux/x86_64/usr/lib/gcc/aarch64-unknown-nto-qnx7.0.0/5.4.0//crtbegin.o
+                0x0000000000011d48                PROVIDE (__fini_array_end, .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr            0x0000000000011d48        0x8
+ *(.jcr)
+ .jcr           0x0000000000011d48        0x0 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/host/linux/x86_64/usr/lib/gcc/aarch64-unknown-nto-qnx7.0.0/5.4.0//crtbegin.o
+ .jcr           0x0000000000011d48        0x8 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/host/linux/x86_64/usr/lib/gcc/aarch64-unknown-nto-qnx7.0.0/5.4.0//crtend.o
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x0000000000011d50      0x1c0
+ *(.dynamic)
+ .dynamic       0x0000000000011d50      0x1c0 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+                0x0000000000011d50                _DYNAMIC
+
+.got            0x0000000000011f10       0xf0
+ *(.got.plt)
+ .got.plt       0x0000000000011f10       0xa0 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+ *(.igot.plt)
+ *(.got)
+ .got           0x0000000000011fb0       0x50 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+                0x0000000000011fb0                _GLOBAL_OFFSET_TABLE_
+ *(.igot)
+                0x0000000000012000                . = DATA_SEGMENT_RELRO_END (., 0x0)
+
+.data           0x0000000000012000        0x8
+                [!provide]                        PROVIDE (__data_start, .)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000000012000        0x0 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+ .data          0x0000000000012000        0x0 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crti.o
+ .data          0x0000000000012000        0x0 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/host/linux/x86_64/usr/lib/gcc/aarch64-unknown-nto-qnx7.0.0/5.4.0//crtbegin.o
+ .data.rel.local
+                0x0000000000012000        0x8 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/host/linux/x86_64/usr/lib/gcc/aarch64-unknown-nto-qnx7.0.0/5.4.0//crtbegin.o
+                0x0000000000012000                __dso_handle
+ .data          0x0000000000012008        0x0 main.o
+ .data          0x0000000000012008        0x0 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/host/linux/x86_64/usr/lib/gcc/aarch64-unknown-nto-qnx7.0.0/5.4.0//crtend.o
+ .data          0x0000000000012008        0x0 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crtn.o
+
+.tm_clone_table
+                0x0000000000012008        0x0
+ .tm_clone_table
+                0x0000000000012008        0x0 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/host/linux/x86_64/usr/lib/gcc/aarch64-unknown-nto-qnx7.0.0/5.4.0//crtbegin.o
+ .tm_clone_table
+                0x0000000000012008        0x0 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/host/linux/x86_64/usr/lib/gcc/aarch64-unknown-nto-qnx7.0.0/5.4.0//crtend.o
+
+.data1
+ *(.data1)
+                0x0000000000012008                _edata = .
+                [!provide]                        PROVIDE (edata, .)
+                0x0000000000012008                . = .
+                0x0000000000012008                __bss_start = .
+                0x0000000000012008                __bss_start__ = .
+
+.bss            0x0000000000012008       0x50
+ *(.dynbss)
+ .dynbss        0x0000000000012008        0x0 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000000012008        0x0 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+ .bss           0x0000000000012008        0x0 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crti.o
+ .bss           0x0000000000012008       0x38 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/host/linux/x86_64/usr/lib/gcc/aarch64-unknown-nto-qnx7.0.0/5.4.0//crtbegin.o
+ .bss           0x0000000000012040        0x0 main.o
+ .bss           0x0000000000012040        0x0 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/host/linux/x86_64/usr/lib/gcc/aarch64-unknown-nto-qnx7.0.0/5.4.0//crtend.o
+ .bss           0x0000000000012040        0x0 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crtn.o
+ *(COMMON)
+ COMMON         0x0000000000012040       0x18 main.o
+                0x0000000000012040                hdl
+                0x0000000000012048                ops
+                0x0000000000012058                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000012058                _bss_end__ = .
+                0x0000000000012058                __bss_end__ = .
+                0x0000000000012058                . = ALIGN (0x8)
+                0x0000000000012058                . = SEGMENT_START ("ldata-segment", .)
+                0x0000000000012058                . = ALIGN (0x8)
+                0x0000000000012058                __end__ = .
+                0x0000000000012058                _end = .
+                [!provide]                        PROVIDE (end, .)
+                0x0000000000012058                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x1f
+ *(.comment)
+ .comment       0x0000000000000000       0x1f /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/host/linux/x86_64/usr/lib/gcc/aarch64-unknown-nto-qnx7.0.0/5.4.0//crtbegin.o
+                                         0x20 (size before relaxing)
+ .comment       0x000000000000001f       0x20 main.o
+ .comment       0x000000000000001f       0x20 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/host/linux/x86_64/usr/lib/gcc/aarch64-unknown-nto-qnx7.0.0/5.4.0//crtend.o
+
+.ident          0x0000000000000000      0x138
+ .ident         0x0000000000000000       0x68 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+ .ident         0x0000000000000068       0x68 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crti.o
+ .ident         0x00000000000000d0       0x68 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crtn.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000       0x70
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x30 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+ .debug_aranges
+                0x0000000000000030       0x40 main.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000      0x7b1
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000       0xb6 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+ .debug_info    0x00000000000000b6      0x6fb main.o
+
+.debug_abbrev   0x0000000000000000      0x241
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000       0x14 /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+ .debug_abbrev  0x0000000000000014      0x22d main.o
+
+.debug_line     0x0000000000000000      0x338
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000       0x9a /home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/qnx_bins/prebuilt_QNX700/target/qnx7/aarch64le/lib/crt1.o
+ .debug_line    0x000000000000009a      0x29e main.o
+
+.debug_frame    0x0000000000000000       0xa8
+ *(.debug_frame)
+ .debug_frame   0x0000000000000000       0xa8 main.o
+
+.debug_str      0x0000000000000000      0x339
+ *(.debug_str)
+ .debug_str     0x0000000000000000      0x339 main.o
+                                        0x377 (size before relaxing)
+
+.debug_loc      0x0000000000000000      0x246
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000      0x246 main.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x0000000000000000       0x60
+ *(.debug_ranges)
+ .debug_ranges  0x0000000000000000       0x60 main.o
+
+.debug_macro
+ *(.debug_macro)
+
+.ARM.attributes
+ *(.ARM.attributes)
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(/home/c/uidq4731/mycode/BYD/20230821/apps/qnx_ap/desaysv/os/test/oem_app_test/aarch64/le/oem_app_test elf64-littleaarch64)

@@ -1,0 +1,7 @@
+{
+    "image_first": "./samples_CAPI/resources/distraction_images/00001.jpg",
+    "image_second": "./samples_CAPI/resources/distraction_images/00100.jpg",
+    "sdk_config_path": "./data/config/",
+    "calibration_result_file": "./calibration_result.bin",
+    "calibration_run_frames": 1800
+}

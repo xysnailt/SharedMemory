@@ -1,0 +1,60 @@
+#include <iostream>
+#include <vector>
+#include <sys/pps.h>
+
+extern "C" {
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
+}
+
+using namespace std;
+
+int main(int argc, char **argv)
+{
+    const char *test_str = "/tmp/pps/spi_service/tx?nopersist";
+
+    int test_fd= open(test_str, O_RDWR | O_CREAT);
+
+    if (test_fd < 0){
+        cout << "open " << test_str << " failed." << endl;
+        return -1;
+    }
+
+    vector<int> data_vec;
+    data_vec.push_back(1);
+    data_vec.push_back(2);
+    data_vec.push_back(3);
+    data_vec.push_back(4);
+    data_vec.push_back(5);
+
+    pps_encoder_t encoder;
+    int offset = 0;
+    while (1) {
+        pps_encoder_initialize(&encoder, false);
+        pps_encoder_start_object(&encoder, "data");
+        pps_encoder_add_int(&encoder, "len", data_vec.size());
+        pps_encoder_start_array(&encoder, "data");
+
+        int len = data_vec.size();
+        for (int i = 0; i < len; ++i) {
+            pps_encoder_add_int(&encoder, 0, data_vec[i] + offset);
+        }
+        offset++;
+
+        pps_encoder_end_array(&encoder);
+        pps_encoder_end_object(&encoder);
+
+        if ( pps_encoder_buffer(&encoder) != nullptr ) {
+            int ret = write(test_fd, pps_encoder_buffer(&encoder), pps_encoder_length(&encoder));
+            if (ret > 0) {
+                cout << "send msg len " << ret << endl;
+            }
+        }
+    }
+
+    pps_encoder_cleanup(&encoder);
+
+    return 0;
+}

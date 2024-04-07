@@ -1,0 +1,113 @@
+{
+  "init_thread_config": {
+    "thread_num": 5,
+    "thread_name": "SenseAuto_Driver_Init",
+    "thread_optimize": true,
+    "#thread_affinity": [4, 5, 6, 7]
+  },
+  "run_thread_config": {
+    "thread_num": 3,
+    "thread_name": "SenseAuto_Driver_Run",
+    "thread_optimize": true,
+    "#thread_affinity": [4, 5, 6, 7]
+  },
+  "optimize_by_frame_padding": true,
+  "algorithm": {
+    "whole_body": {
+      "enabled": true,
+      "frame_rate": 2,
+      "model": "models/MM_MME_MagiCube_DMS_Gray_M1.13_1.3.411.model",
+      "##hand_det_score_thr": 0.5,
+      "##face_det_score_thr": 0.5,
+      "##head_det_score_thr": 0.5,
+      "enable_choose_max_head": false,
+      "body_track": {
+        "enabled": true,
+        "body_score_thrs": [0.1, 0.6, 0.7],
+        "match_iou_thrs": [0.1, 0.3, 0.5],
+        "num_frames_retain": 5,
+        "keep_num_tentatives": 3
+      }
+    },
+    "wb_face_track": {
+      "enabled": true,
+      "frame_rate": 15,
+      "model": "models/MM_MME_FaceAlignHead_Common_GRAY_M1.13_5.8.411.model",
+      "headpose_model": "models/MM_MME_FaceHeadPose_Common_GRAY_A7.9.0_5.7.000.model",
+      "enable_seat_id_tracking": false,
+      "whole_body_score_thr": 0.1,
+      "max_target_num": 1,
+      "align_sz_thr": 200,
+      "aligner_score_thr": 0.5,
+      "max_lost_frame_cnt": 0
+    },
+    "eye": {
+      "enabled": true,
+      "frame_rate": 10,
+      "model": "models/MM_MME_Eye_NIOa_GRAY_M1.13_7.7.411.model"
+    },
+    "eye_feature": {
+      "enabled": false,
+      "frame_rate": 10,
+      "model": "models/MM_MME_EyeFeature_Common_GRAY_M1.13_2.5.411.model",
+      "thr": 0.4
+    },
+    "emotion_mouth": {
+      "enabled": true,
+      "frame_rate": 5,
+      "model": "models/MM_MME_EmotionMouth_Common_GRAY_M1.13_3.6.411.model",
+      "##mouth_thrs": [0.5],
+      "##emotion_thrs": [0.5, 0.5, 0.5, 0.5, 0.5]
+    },
+    "face_attr": {
+      "enabled": false,
+      "frame_rate": 10,
+      "model": "models/MM_MME_FaceAttr_CN_BGR_M1.13_1.11.411.model",
+      "age_gender_frame_limit": 5,
+      "mask_glass_hat": {
+        "enabled": false,
+        "frame_rate": 1
+      },
+      "##face_attr_thrs": {
+        "child_thr": 0.5,
+        "face_quality_thr": 0.5,
+        "race_yellow_black_white_thr": [0.5, 0.5, 0.5],
+        "mask_thr": 0.5,
+        "hat_thr": 0.5,
+        "gender_thr": 0.5,
+        "glasses_none_general_sunglasses_thr": [0.5, 0.5, 0.5]
+      }
+    },
+    "gaze": {
+      "enabled": true,
+      "frame_rate": 15,
+      "gaze_param": "config/distraction_cfg/gaze_param.json",
+      "left_model": "models/MM_SmartV_GazeLeftG_Common_GRAY_M1.13_4.28.411.model",
+      "right_model": "models/MM_SmartV_GazeRightG_Common_GRAY_M1.13_4.28.411.model"
+    },
+    "camera_occlusion": {
+      "enabled": false,
+      "frame_rate": 1,
+      "brightness_thrs": [1, 127],
+      "occlusion_proportion_thr": 0.75,
+      "occlusion_time_thr": 5
+    },
+    "head3d": {
+      "enabled": true,
+      "frame_rate": 15,
+      "model": "models/MM_Pattern_Head3d_Common_GRAY_H1.12_4.1.401.model",
+      "camera_param_file": "config/distraction_cfg/camera_dms.json",
+      "head3d_param_file": "config/distraction_cfg/head3d_param.json",
+      "compensate_enable": true,
+      "headpose_yaw_enable": true
+    }
+  },
+  "debug_config": {
+    "dump_result": false,
+    "dump_image": false,
+    "monitor_cpu": false,
+    "monitor_mem": false,
+    "dump_op_image": [],
+    "dump_tensor": []
+  }
+}

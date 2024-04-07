@@ -1,0 +1,169 @@
+{
+  "plugin": {
+    "wb_face_track_post_filter": {
+      "face_quality": {
+        "enabled": true,
+        "disable_rect_outbound": true,
+        "yaw_pitch_bright_dark_blur_thr": [-1, -1, -1, -1, -1],
+        "bright_dark_occlusion_ratio_thr": [-1, -1, -1],
+        "landmark_list_inbound": [
+          7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24,
+          25, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99,
+          100, 101, 102, 103
+        ]
+      }
+    },
+    "face_attr_pre_filter": {
+      "face_quality": {
+        "enabled": true,
+        "yaw_pitch_bright_dark_blur_thr": [45, 35, -1, -1, -1],
+        "face_size_thr": 64,
+        "track_score_thr": -1
+      }
+    },
+    "eye_pre_filter": {
+      "face_quality": {
+        "enabled": true,
+        "yaw_pitch_bright_dark_blur_thr": [90, 90, -1, -1, -1],
+        "disable_rect_outbound": true
+      },
+      "filter_id_if_eye_ft_reg": true
+    },
+    "eye_feature_pre_filter": {
+      "reg_pre_filter": {
+        "reg_frame_range": [100, 300],
+        "clean_reg_by_id_lost": false,
+        "eye_quality_filter": {
+          "blur_thr": 4,
+          "bright_ratio_thr": 0.7,
+          "bright_thr": 200,
+          "dark_ratio_thr": -1,
+          "dark_thr": 55,
+          "gray_min": 64,
+          "occlusion_thr": -1,
+          "pitch_thr": [-5, 35],
+          "yaw_thr_left": [-30, 15],
+          "yaw_thr_right": [-15, 30]
+        },
+        "prior_filter_cfg": {
+          "candidates_max_len": 20,
+          "eye_open_thr": 0.5,
+          "eye_squint_thr": 0.4,
+          "eye_valid_thr": 0.9,
+          "key_point_thr": 6,
+          "prior_filter_window_sz": 5,
+          "top_k": 1,
+          "by_pass_mode": false
+        }
+      }
+    },
+    "emotion_mouth_pre_filter": {
+      "face_quality": {
+        "enabled": true,
+        "yaw_pitch_bright_dark_blur_thr": [90, 90, -1, -1, -1],
+        "disable_rect_outbound": true
+      }
+    },
+    "emotion_mouth_post_filter": {
+      "face_quality": {
+        "enabled": true,
+        "yaw_pitch_bright_dark_blur_thr": [70, 55, -1, -1, -1],
+        "face_size_thr": 64,
+        "track_score_thr": -1,
+        "alg_type": "LandmarkOcclusion",
+        "disable_rect_outbound": true,
+        "face_landmark_occlusion": [
+          [
+            {
+              "landmark": [
+                43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58,
+                59, 60, 61, 62, 63, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82,
+                83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98,
+                99, 100, 101, 102, 103, 104, 105
+              ],
+              "threshold": 8,
+              "flag": "face"
+            }
+          ]
+        ]
+      }
+    },
+    "face_id_pre_filter": {
+      "best_image": {
+        "enabled": true,
+        "image_max_cnt_thr": 3,
+        "time_interval_thr": 1.0
+      },
+      "register_face_quality": {
+        "enabled": true,
+        "yaw_pitch_bright_dark_blur_thr": [15, 15, 200, 55, -1],
+        "bright_dark_occlusion_ratio_thr": [0.5, 0.5, -1],
+        "face_size_thr": 100,
+        "track_score_thr": 0.8
+      },
+      "login_face_quality": {
+        "enabled": true,
+        "yaw_pitch_bright_dark_blur_thr": [30, 25, 200, 55, -1],
+        "bright_dark_occlusion_ratio_thr": [0.5, 0.5, -1],
+        "track_score_thr": 0.8,
+        "face_size_thr": 100
+      }
+    },
+    "head3d_post_filter": {
+      "compensate": {
+        "enabled": false
+      }
+    },
+    "wb_gesture_pre_filter": {
+      "filter_by_person_hands": false,
+      "filter_by_person_hands_cfg": [
+        {
+          "seat_id": "Driver",
+          "hand_tag": "right"
+        },
+        {
+          "seat_id": "CoDriver",
+          "hand_tag": "left"
+        }
+      ]
+    },
+    "wb_gesture_post_filter": {
+      "filter_to_best_gesture": true,
+      "filter_bad_score": {
+        "enabled": true,
+        "cls_score_thr": 0.0
+      },
+      "filter_ldmk_visit": false,
+      "filter_by_history": true,
+      "history_num": 6,
+      "standard_var": 5.0,
+      "filter_by_roi": false,
+      "filter_by_angle": false,
+      "roi": [430, 300, 1450, 1080]
+    },
+    "gesture_dynamic_pre_filter": {
+      "filter_to_best_gesture": false,
+      "filter_bad_score": {
+        "enabled": true,
+        "cls_score_thr": 0.0
+      },
+      "filter_ldmk_visit": false
+    },
+    "gesture_dynamic_post_filter": {
+      "filter_to_best_gesture": false,
+      "filter_bad_score": {
+        "enabled": true,
+        "cls_score_thr": 0.0
+      },
+      "filter_ldmk_visit": false,
+      "filter_back_hand": {
+        "enabled": true,
+        "max_history_num": 9,
+        "back_score_thred": 0.6
+      }
+    },
+    "hand_det_post_filter": {
+      "det_score_thr": 0.5
+    }
+  }
+}

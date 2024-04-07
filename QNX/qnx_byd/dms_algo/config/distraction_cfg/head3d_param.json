@@ -1,0 +1,37 @@
+{
+    "scale": 100,
+    "pose_fitting_index": [
+        16, 43, 44, 45, 46, 49, 52, 55, 73, 57, 56, 58, 61, 76, 63, 62, 84, 96, 100, 90
+    ],
+    "contour_index": [
+        0, 2, 4, 6, 8, 10, 12, 16, 18, 20, 22, 24, 26, 28, 30, 32
+    ],
+    "head_index": 11690,
+    "left_eye_index": [7730, 7235, 11600],
+    "right_eye_index": [4400, 3946, 11510],
+    "left_eye_lid_up_index": [10889, 4347, 10888],
+    "left_eye_lid_down_index": [756, 10899, 4391],
+    "right_eye_lid_up_index": [7274, 7239, 7267],
+    "right_eye_lid_down_index": [7245, 9445, 7257],
+    "left_pupil_index": [11526, 11511],
+    "right_pupil_index": [11601, 11616],
+
+    "left_lips_index": [72, 73],
+    "right_lips_index": [75, 76],
+    "left_corner_lips_index": [52, 55],
+    "right_corner_lips_index": [58, 61],
+    "mouth_lips_vertical_index": [98, 102],
+    "mouth_lips_horizontal_index": [84, 90],
+   
+    "left_lips_model_index": [10888, 4374],
+    "right_lips_model_index": [9452, 7281],
+    "left_corner_lips_model_index": [10892, 771],
+    "right_corner_lips_model_index": [2196, 9456],
+    "mouth_lips_vertical_model_index": [8802, 8799],
+    "mouth_lips_horizontal_model_index": [174, 1599],
+
+    "eye_thrd_dist_ratio": 0.33,
+    "left_eye_down_index": [52, 57, 73, 56, 55],
+    "right_eye_down_index": [61, 62, 76, 63, 58],
+    "simple_solvepnp_enable": true
+}

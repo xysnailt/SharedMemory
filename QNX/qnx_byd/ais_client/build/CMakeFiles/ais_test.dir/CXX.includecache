@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../inc/ion.h
+linux/ioctl.h
+-
+linux/types.h
+-
+
+/MyGit/MyRepository/SharedMemory/dms_service/ais_client/ais_test.cpp
+stdio.h
+-
+stdlib.h
+-
+fcntl.h
+-
+unistd.h
+-
+sys/ioctl.h
+-
+sys/mman.h
+-
+ion.h
+-
+

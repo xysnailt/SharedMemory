@@ -1,0 +1,82 @@
+德赛车机：
+dtach -a /tmp/android
+setprop persist.sv.debug.adb_enable 1
+进入工程模式：adb shell am start -n com.desaysv.engmode/.MainActivity
+
+pfctl -d
+iptables -F
+iptables -X
+iptables -P INPUT ACCEPT
+iptables -P OUTPUT ACCEPT
+iptables -P FORWARD ACCEPT
+busybox telnet 192.168.8.1
+root sv2655888
+
+共享目录：
+android /share  qnx /var/share
+
+mount -uw /
+
+
+adb shell
+busybox telnet 192.168.8.1
+root
+sv2655888
+mount -uw /
+cp /var/share/ais_demo /data/
+./ais_demo
+
+
+adb root
+adb remount
+adb shell am start -n com.desaysv.engmode/.MainActivity
+adb shell
+setprop persist.sv.debug.adb_enable 1
+iptables -F
+iptables -X
+iptables -P INPUT ACCEPT
+iptables -P OUTPUT ACCEPT
+iptables -P FORWARD ACCEPT
+busybox telnet 192.168.8.1
+root sv2655888
+
+adb shell
+busybox telnet 192.168.8.1
+root sv2655888
+
+
+cd /data/BYDD9_DMSb080f171_231205.1424_linux-aarch64-qnx_231205;cp /var/share/byd_test ./;chmod 777 byd_test;
+export PATH=$(pwd)/data/samples/tools:$(pwd)/data/samples/bin:$PATH;
+export LD_LIBRARY_PATH=$(pwd)/lib:$(pwd)/samples/tools/opencv/lib;
+export ADSP_LIBRARY_PATH=$(pwd)/lib;
+export CDSP_LIBRARY_PATH=$(pwd)/lib;
+./byd_test
+
+
+ubuntu:
+./scripts/build.sh
+bash run.sh
+
+android:
+busybox tcpsvd 0 21 busybox ftpd -w /data
+
+qnx:
+adb shell
+busybox telnet 192.168.8.1
+root sv2655888
+ftp 192.168.8.2
+get
+/share/dmsServer
+/data/BYDD9_DMSb080f171_231205.1424_linux-aarch64-qnx_231205/dmsServer
+
+bash run.sh
+./login_qnx.sh
+
+cd /data/BYDD9_DMSb080f171_231205.1424_linux-aarch64-qnx_231205;
+export PATH=$(pwd)/data/samples/tools:$(pwd)/data/samples/bin:$PATH;
+export LD_LIBRARY_PATH=$(pwd)/lib:$(pwd)/samples/tools/opencv/lib;
+export ADSP_LIBRARY_PATH=$(pwd)/lib;
+export CDSP_LIBRARY_PATH=$(pwd)/lib;
+cp /var/share/byd_test ./;
+chmod 777 byd_test;
+./byd_test;

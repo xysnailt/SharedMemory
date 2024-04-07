@@ -1,0 +1,77 @@
+{
+    "3dmodel": {
+        "priority_dic": [8,5,1,2,3,7,4,10,11,6,9],
+        "aoi_info": {
+            "aoi_num": 11,
+            "aois": [{
+                    "center": [0.025,0.435],
+                    "size": [0.750,0.330],
+                    "index": 1,
+                    "name": "front windshield"
+                },
+                {
+                    "center": [1.050,0.260],
+                    "size": [0.360,0.120],
+                    "index": 2,
+                    "name": "side_front windshield"
+                },
+                {
+                    "center": [0.025,-0.040],
+                    "size": [0.750,0.620],
+                    "index": 3,
+                    "name": "speed indicator"
+                },
+                {
+                    "center": [0.815,0.435],
+                    "size": [0.770,0.230],
+                    "index": 4,
+                    "name": "rear mirror"
+                },
+                {
+                    "center": [0.585,-0.110],
+                    "size": [0.570,0.480],
+                    "index": 5,
+                    "name": "navi display"
+                },
+                {
+                    "center": [-0.860,0.100
+                    ],
+                    "size": [0.680,0.400],
+                    "index": 6,
+                    "name": "left mirror"
+                },
+                {
+                    "center": [1.135,0.050],
+                    "size": [0.530,0.300],
+                    "index": 7,
+                    "name": "right mirror"
+                },
+                {
+                    "center": [0.465,0.190],
+                    "size": [0.470,0.420],
+                    "index": 8,
+                    "name": "sunvisor"
+                },
+                {
+                    "center": [100,100],
+                    "size": [0.1,0.1],
+                    "index": 9,
+                    "name": "gear shift"
+                },
+                {
+                    "center": [100,100],
+                    "size": [0.1,0.1],
+                    "index": 10,
+                    "name": "smart phone"
+                },
+                {
+                    "center": [100,100
+                    ],
+                    "size": [0.1,0.1],
+                    "index": 11,
+                    "name": "passenger seat"
+                }
+            ]
+        }
+    }
+}
